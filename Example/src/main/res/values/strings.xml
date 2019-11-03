@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Example</string>
+    <string name="judgement_t">正确</string>
+    <string name="judgement_f">错误</string>
+    <string name="previous">上一题</string>
+    <string name="next">下一题</string>
+    <string name="submit">提交</string>
+    <string name="exit">退出</string>
+</resources>

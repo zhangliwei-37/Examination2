@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+android:id="@+id/tv_stem"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1.5" />
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:layout_marginBottom="10dp"
+android:layout_marginTop="10dp"
+android:background="#aaaaaa" />
+
+<FrameLayout
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="4">
+
+<LinearLayout
+    android:id="@+id/ll_single_choice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+    <RadioGroup
+        android:id="@+id/rg_single_choice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/rb_single_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_single_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_single_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_single_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_multiple_choice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <CheckBox
+            android:id="@+id/cb_multiple_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb_multiple_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb_multiple_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb_multiple_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/ll_judgement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+    <RadioGroup
+        android:id="@+id/rg_judgement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/rb_judgement_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/judgement_t"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb_judgement_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/judgement_f" />
+
+    </RadioGroup>
+
+</LinearLayout>
+
+</FrameLayout>
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:layout_marginBottom="10dp"
+android:layout_marginTop="10dp"
+android:background="#aaaaaa" />
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1"
+android:gravity="center"
+android:orientation="horizontal">
+
+<Button
+    android:id="@+id/btn_previous"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:onClick="doPrevious"
+    android:text="@string/previous" />
+
+<Button
+    android:id="@+id/btn_next"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:onClick="doNext"
+    android:text="@string/next" />
+
+<Button
+    android:id="@+id/btn_submit"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:onClick="doSubmit"
+    android:text="@string/submit" />
+
+<Button
+    android:id="@+id/btn_exit"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:onClick="doExit"
+    android:text="@string/exit" />
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+include ':app', ':test1', ':teach1', ':example', ':drive_test'
+rootProject.name='Examination'
